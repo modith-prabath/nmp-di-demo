@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import com.nmp.demo.di.nmpdidemo.controller.ConstructorInjectedController;
 import com.nmp.demo.di.nmpdidemo.controller.I18nController;
 import com.nmp.demo.di.nmpdidemo.controller.MyController;
+import com.nmp.demo.di.nmpdidemo.controller.PetController;
 import com.nmp.demo.di.nmpdidemo.controller.PrimaryBeanController;
 import com.nmp.demo.di.nmpdidemo.controller.PropertyInjectedController;
 import com.nmp.demo.di.nmpdidemo.controller.SetterInjectedController;
@@ -50,6 +51,10 @@ public class NmpDiDemoApplication {
 		I18nController i18nController = ctx.getBean("i18nController" , I18nController.class);
 
 		System.out.println(i18nController.sayHello());
+
+		PetController petController = ctx.getBean("petController", PetController.class);
+		System.out.println("--- The Best Pet is ---");
+		System.out.println(petController.whichPetIsTheBest());
 	}
 
 }
