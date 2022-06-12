@@ -11,6 +11,7 @@ import com.nmp.demo.di.nmpdidemo.controller.PetController;
 import com.nmp.demo.di.nmpdidemo.controller.PrimaryBeanController;
 import com.nmp.demo.di.nmpdidemo.controller.PropertyInjectedController;
 import com.nmp.demo.di.nmpdidemo.controller.SetterInjectedController;
+import com.nmp.demo.di.nmpdidemo.services.LifeCycleDemoBean;
 
 @SpringBootApplication
 public class NmpDiDemoApplication {
@@ -55,6 +56,7 @@ public class NmpDiDemoApplication {
 		PetController petController = ctx.getBean("petController", PetController.class);
 		System.out.println("--- The Best Pet is ---");
 		System.out.println(petController.whichPetIsTheBest());
+
 	}
 
 }
