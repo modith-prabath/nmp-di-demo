@@ -1,4 +1,4 @@
-package com.nmp.demo.di.nmpdidemo.services;
+package com.nmp.demo.di.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

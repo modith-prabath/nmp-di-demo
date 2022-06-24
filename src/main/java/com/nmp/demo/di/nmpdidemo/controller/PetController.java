@@ -1,7 +1,8 @@
 package com.nmp.demo.di.nmpdidemo.controller;
 
 import org.springframework.stereotype.Controller;
-import com.nmp.demo.di.nmpdidemo.services.PetService;
+
+import com.nmp.demo.di.services.PetService;
 
 @Controller
 public class PetController  {

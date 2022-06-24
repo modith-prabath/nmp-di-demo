@@ -3,7 +3,7 @@ package com.nmp.demo.di.nmpdidemo.controller;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.nmp.demo.di.nmpdidemo.services.ConstructorGreetingServiceImpl;
+import com.nmp.demo.di.services.ConstructorGreetingServiceImpl;
 
 public class ConstructorInjectedControllerTest {
 

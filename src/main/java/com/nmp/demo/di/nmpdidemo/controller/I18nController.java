@@ -3,7 +3,7 @@ package com.nmp.demo.di.nmpdidemo.controller;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import com.nmp.demo.di.nmpdidemo.services.GreetingService;
+import com.nmp.demo.di.services.GreetingService;
 
 @Controller
 public class I18nController {

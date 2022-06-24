@@ -1,4 +1,4 @@
-package com.nmp.demo.di.nmpdidemo.services;
+package com.nmp.demo.di.services;
 
 public interface PetService {
   String getPetType();

@@ -1,4 +1,4 @@
-package com.nmp.demo.di.nmpdidemo.services;
+package com.nmp.demo.di.services;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

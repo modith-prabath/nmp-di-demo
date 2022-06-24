@@ -2,7 +2,7 @@ package com.nmp.demo.di.nmpdidemo.controller;
 
 import org.springframework.stereotype.Controller;
 
-import com.nmp.demo.di.nmpdidemo.services.GreetingService;
+import com.nmp.demo.di.services.GreetingService;
 
 @Controller
 public class PrimaryBeanController {

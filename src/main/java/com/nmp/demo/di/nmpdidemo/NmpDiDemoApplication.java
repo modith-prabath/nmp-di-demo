@@ -3,6 +3,7 @@ package com.nmp.demo.di.nmpdidemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.nmp.demo.di.nmpdidemo.controller.ConstructorInjectedController;
 import com.nmp.demo.di.nmpdidemo.controller.I18nController;
@@ -11,9 +12,9 @@ import com.nmp.demo.di.nmpdidemo.controller.PetController;
 import com.nmp.demo.di.nmpdidemo.controller.PrimaryBeanController;
 import com.nmp.demo.di.nmpdidemo.controller.PropertyInjectedController;
 import com.nmp.demo.di.nmpdidemo.controller.SetterInjectedController;
-import com.nmp.demo.di.nmpdidemo.services.LifeCycleDemoBean;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.nmp.demo.di.services" , "com.nmp.demo.di.nmpdidemo"})
 public class NmpDiDemoApplication {
 
 	public static void main(String[] args) {
